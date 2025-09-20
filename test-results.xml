@@ -1,0 +1,181 @@
+<testsuites id="" name="" tests="11" failures="0" skipped="0" errors="0" time="6.843013">
+<testsuite name="reqres-api.spec.ts" timestamp="2025-09-20T11:47:24.810Z" hostname="API Tests" tests="11" failures="0" skipped="0" time="10.75" errors="0">
+<testcase name="JSONPlaceholder API Automation Tests › Complete API Workflow: Create → Get → Update User" classname="reqres-api.spec.ts" time="1.621">
+<system-out>
+<![CDATA[ Starting API automation workflow...
+
+STEP 1: Creating a new user...
+Create user status: 201
+ Create response body: {
+  "name": "John Doe",
+  "job": "Software Engineer",
+  "id": 11
+}
+Stored userId: 11
+
+STEP 2: Fetching user details...
+ Get user status: 200
+Get user response: {
+  "id": 2,
+  "name": "Ervin Howell",
+  "username": "Antonette",
+  "email": "Shanna@melissa.tv",
+  "address": {
+    "street": "Victor Plains",
+    "suite": "Suite 879",
+    "city": "Wisokyburgh",
+    "zipcode": "90566-7771",
+    "geo": {
+      "lat": "-43.9509",
+      "lng": "-34.4618"
+    }
+  },
+  "phone": "010-692-6593 x09125",
+  "website": "anastasia.net",
+  "company": {
+    "name": "Deckow-Crist",
+    "catchPhrase": "Proactive didactic contingency",
+    "bs": "synergize scalable supply-chains"
+  }
+}
+User details - Name: Ervin Howell (Antonette)
+
+STEP 3: Updating user information...
+Update user status: 200
+Update response: {
+  "name": "John Smith",
+  "job": "Senior Software Engineer",
+  "id": 2
+}
+API automation workflow completed successfully!
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Automation Tests › Debug API Endpoints" classname="reqres-api.spec.ts" time="0.465">
+<system-out>
+<![CDATA[Debugging API endpoints...
+GET /users/1 status: 200
+Base URL: https://reqres.in/api
+GET response: {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+POST /users status: 201
+POST response body: {
+  "name": "Test",
+  "job": "Tester",
+  "id": 11
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Automation Tests › Handle API Error - Get Non-existent User" classname="reqres-api.spec.ts" time="0.377">
+<system-out>
+<![CDATA[Testing error handling for non-existent user...
+Status: 404
+Error response: {}
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Automation Tests › Test PATCH method for partial update" classname="reqres-api.spec.ts" time="0.53">
+<system-out>
+<![CDATA[Testing PATCH method for partial update...
+PATCH response: {
+  "id": 2,
+  "name": "Ervin Howell",
+  "username": "Antonette",
+  "email": "Shanna@melissa.tv",
+  "address": {
+    "street": "Victor Plains",
+    "suite": "Suite 879",
+    "city": "Wisokyburgh",
+    "zipcode": "90566-7771",
+    "geo": {
+      "lat": "-43.9509",
+      "lng": "-34.4618"
+    }
+  },
+  "phone": "010-692-6593 x09125",
+  "website": "anastasia.net",
+  "company": {
+    "name": "Deckow-Crist",
+    "catchPhrase": "Proactive didactic contingency",
+    "bs": "synergize scalable supply-chains"
+  },
+  "job": "Tech Lead"
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Automation Tests › Test DELETE method" classname="reqres-api.spec.ts" time="0.547">
+<system-out>
+<![CDATA[Testing DELETE method...
+Delete status: 200
+Delete response body: {}
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Automation Tests › Test GET with query parameters" classname="reqres-api.spec.ts" time="0.621">
+<system-out>
+<![CDATA[Testing GET with query parameters...
+GET with limit status: 200
+Found 3 users with limit
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Automation Tests › Test API Response Time Performance" classname="reqres-api.spec.ts" time="0.293">
+<system-out>
+<![CDATA[Testing API response time...
+Response time: 278ms
+]]>
+</system-out>
+</testcase>
+<testcase name="Using API Helper Class - Enhanced" classname="reqres-api.spec.ts" time="2.129">
+<system-out>
+<![CDATA[Created user via helper: { name: [32m'Jane Doe'[39m, job: [32m'Product Manager'[39m, id: [33m11[39m }
+Fetched user via helper: Leanne Graham
+User response validation passed
+Found 1 users matching 'Leanne'
+Retrieved 10 total users
+]]>
+</system-out>
+</testcase>
+<testcase name="Data-Driven API Tests › Create user 1: Alice Johnson" classname="reqres-api.spec.ts" time="1.07">
+<system-out>
+<![CDATA[Successfully created user: Alice Johnson
+]]>
+</system-out>
+</testcase>
+<testcase name="Data-Driven API Tests › Create user 2: Bob Smith" classname="reqres-api.spec.ts" time="1.624">
+<system-out>
+<![CDATA[Successfully created user: Bob Smith
+]]>
+</system-out>
+</testcase>
+<testcase name="Data-Driven API Tests › Create user 3: Carol Davis" classname="reqres-api.spec.ts" time="1.473">
+<system-out>
+<![CDATA[Successfully created user: Carol Davis
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

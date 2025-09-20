@@ -1,0 +1,607 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\N Darshan\\Desktop\\api-automation-project\\playwright.config.ts",
+    "rootDir": "C:/Users/N Darshan/Desktop/api-automation-project/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\N Darshan\\Desktop\\api-automation-project\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\N Darshan\\Desktop\\api-automation-project\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/N Darshan/Desktop/api-automation-project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "API Tests",
+        "name": "API Tests",
+        "testDir": "C:/Users/N Darshan/Desktop/api-automation-project/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "reqres-api.spec.ts",
+      "file": "reqres-api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Using API Helper Class - Enhanced",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "API Tests",
+              "projectName": "API Tests",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2129,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Created user via helper: { name: \u001b[32m'Jane Doe'\u001b[39m, job: \u001b[32m'Product Manager'\u001b[39m, id: \u001b[33m11\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Fetched user via helper: Leanne Graham\n"
+                    },
+                    {
+                      "text": "User response validation passed\n"
+                    },
+                    {
+                      "text": "Found 1 users matching 'Leanne'\n"
+                    },
+                    {
+                      "text": "Retrieved 10 total users\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-09-20T11:47:27.414Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75b3329308a2e8e510d9-eda0f1d34125942656dc",
+          "file": "reqres-api.spec.ts",
+          "line": 393,
+          "column": 5
+        }
+      ],
+      "suites": [
+        {
+          "title": "JSONPlaceholder API Automation Tests",
+          "file": "reqres-api.spec.ts",
+          "line": 89,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Complete API Workflow: Create → Get → Update User",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1621,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": " Starting API automation workflow...\n\n"
+                        },
+                        {
+                          "text": "STEP 1: Creating a new user...\n"
+                        },
+                        {
+                          "text": "Create user status: 201\n"
+                        },
+                        {
+                          "text": " Create response body: {\n  \"name\": \"John Doe\",\n  \"job\": \"Software Engineer\",\n  \"id\": 11\n}\n"
+                        },
+                        {
+                          "text": "Stored userId: 11\n\n"
+                        },
+                        {
+                          "text": "STEP 2: Fetching user details...\n"
+                        },
+                        {
+                          "text": " Get user status: 200\n"
+                        },
+                        {
+                          "text": "Get user response: {\n  \"id\": 2,\n  \"name\": \"Ervin Howell\",\n  \"username\": \"Antonette\",\n  \"email\": \"Shanna@melissa.tv\",\n  \"address\": {\n    \"street\": \"Victor Plains\",\n    \"suite\": \"Suite 879\",\n    \"city\": \"Wisokyburgh\",\n    \"zipcode\": \"90566-7771\",\n    \"geo\": {\n      \"lat\": \"-43.9509\",\n      \"lng\": \"-34.4618\"\n    }\n  },\n  \"phone\": \"010-692-6593 x09125\",\n  \"website\": \"anastasia.net\",\n  \"company\": {\n    \"name\": \"Deckow-Crist\",\n    \"catchPhrase\": \"Proactive didactic contingency\",\n    \"bs\": \"synergize scalable supply-chains\"\n  }\n}\n"
+                        },
+                        {
+                          "text": "User details - Name: Ervin Howell (Antonette)\n\n"
+                        },
+                        {
+                          "text": "STEP 3: Updating user information...\n"
+                        },
+                        {
+                          "text": "Update user status: 200\n"
+                        },
+                        {
+                          "text": "Update response: {\n  \"name\": \"John Smith\",\n  \"job\": \"Senior Software Engineer\",\n  \"id\": 2\n}\n"
+                        },
+                        {
+                          "text": "API automation workflow completed successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:28.744Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-d9699918a95c7c2ccf3e",
+              "file": "reqres-api.spec.ts",
+              "line": 110,
+              "column": 7
+            },
+            {
+              "title": "Debug API Endpoints",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 465,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Debugging API endpoints...\n"
+                        },
+                        {
+                          "text": "GET /users/1 status: 200\n"
+                        },
+                        {
+                          "text": "Base URL: https://reqres.in/api\n"
+                        },
+                        {
+                          "text": "GET response: {\n  \"id\": 1,\n  \"name\": \"Leanne Graham\",\n  \"username\": \"Bret\",\n  \"email\": \"Sincere@april.biz\",\n  \"address\": {\n    \"street\": \"Kulas Light\",\n    \"suite\": \"Apt. 556\",\n    \"city\": \"Gwenborough\",\n    \"zipcode\": \"92998-3874\",\n    \"geo\": {\n      \"lat\": \"-37.3159\",\n      \"lng\": \"81.1496\"\n    }\n  },\n  \"phone\": \"1-770-736-8031 x56442\",\n  \"website\": \"hildegard.org\",\n  \"company\": {\n    \"name\": \"Romaguera-Crona\",\n    \"catchPhrase\": \"Multi-layered client-server neural-net\",\n    \"bs\": \"harness real-time e-markets\"\n  }\n}\n"
+                        },
+                        {
+                          "text": "POST /users status: 201\n"
+                        },
+                        {
+                          "text": "POST response body: {\n  \"name\": \"Test\",\n  \"job\": \"Tester\",\n  \"id\": 11\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:30.512Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-3a8c5b56f055f52de32a",
+              "file": "reqres-api.spec.ts",
+              "line": 197,
+              "column": 7
+            },
+            {
+              "title": "Handle API Error - Get Non-existent User",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 377,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Testing error handling for non-existent user...\n"
+                        },
+                        {
+                          "text": "Status: 404\n"
+                        },
+                        {
+                          "text": "Error response: {}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:29.126Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-802fe9671604449af4f2",
+              "file": "reqres-api.spec.ts",
+              "line": 229,
+              "column": 7
+            },
+            {
+              "title": "Test PATCH method for partial update",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 530,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Testing PATCH method for partial update...\n"
+                        },
+                        {
+                          "text": "PATCH response: {\n  \"id\": 2,\n  \"name\": \"Ervin Howell\",\n  \"username\": \"Antonette\",\n  \"email\": \"Shanna@melissa.tv\",\n  \"address\": {\n    \"street\": \"Victor Plains\",\n    \"suite\": \"Suite 879\",\n    \"city\": \"Wisokyburgh\",\n    \"zipcode\": \"90566-7771\",\n    \"geo\": {\n      \"lat\": \"-43.9509\",\n      \"lng\": \"-34.4618\"\n    }\n  },\n  \"phone\": \"010-692-6593 x09125\",\n  \"website\": \"anastasia.net\",\n  \"company\": {\n    \"name\": \"Deckow-Crist\",\n    \"catchPhrase\": \"Proactive didactic contingency\",\n    \"bs\": \"synergize scalable supply-chains\"\n  },\n  \"job\": \"Tech Lead\"\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:29.634Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-e835b97cd07d6f5924e3",
+              "file": "reqres-api.spec.ts",
+              "line": 242,
+              "column": 7
+            },
+            {
+              "title": "Test DELETE method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 547,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Testing DELETE method...\n"
+                        },
+                        {
+                          "text": "Delete status: 200\n"
+                        },
+                        {
+                          "text": "Delete response body: {}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:29.201Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-5e07cf34016ca640993b",
+              "file": "reqres-api.spec.ts",
+              "line": 268,
+              "column": 7
+            },
+            {
+              "title": "Test GET with query parameters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 621,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Testing GET with query parameters...\n"
+                        },
+                        {
+                          "text": "GET with limit status: 200\n"
+                        },
+                        {
+                          "text": "Found 3 users with limit\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:29.876Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-13de046c7d149ee0d98c",
+              "file": "reqres-api.spec.ts",
+              "line": 282,
+              "column": 7
+            },
+            {
+              "title": "Test API Response Time Performance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 293,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Testing API response time...\n"
+                        },
+                        {
+                          "text": "Response time: 278ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:29.636Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-6e7f2e4d23b9e402300f",
+              "file": "reqres-api.spec.ts",
+              "line": 298,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Data-Driven API Tests",
+          "file": "reqres-api.spec.ts",
+          "line": 435,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create user 1: Alice Johnson",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1070,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Successfully created user: Alice Johnson\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:27.594Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-73f142c134aca7deb39e",
+              "file": "reqres-api.spec.ts",
+              "line": 443,
+              "column": 9
+            },
+            {
+              "title": "Create user 2: Bob Smith",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1624,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Successfully created user: Bob Smith\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:27.500Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-14afb2b5b430503006f7",
+              "file": "reqres-api.spec.ts",
+              "line": 443,
+              "column": 9
+            },
+            {
+              "title": "Create user 3: Carol Davis",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API Tests",
+                  "projectName": "API Tests",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1473,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Successfully created user: Carol Davis\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T11:47:27.549Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75b3329308a2e8e510d9-b171949eef32499f3456",
+              "file": "reqres-api.spec.ts",
+              "line": 443,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-20T11:47:24.308Z",
+    "duration": 6843.013,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
